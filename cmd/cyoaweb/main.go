@@ -26,8 +26,7 @@ func main() {
 		panic(err)
 	}
 
-	fmt.Printf("%+v \n", story)
-	h := cyoa.NewHandler(story, nil)
+	h := cyoa.NewHandler(story)
 
 	fmt.Printf("Starting server on port: %d", *port)
 
